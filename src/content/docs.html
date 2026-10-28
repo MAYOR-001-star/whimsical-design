@@ -1,0 +1,192 @@
+<div class="root" style="background:#F6F5EE;color:#1D1A16;font-family:'DM Sans',system-ui,sans-serif;overflow:hidden;position:relative">
+
+<header style="max-width:1200px;margin:0 auto;padding:22px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="/" aria-label="start.ng home" style="display:flex;align-items:center;gap:10px">
+<svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="#FFC20E" stroke="#1D1A16" stroke-width="3"></circle><rect x="3" y="20" width="38" height="7" fill="#1D1A16"></rect><path d="M17 11 L30 22 L17 33Z" fill="#C93A1F" stroke="#1D1A16" stroke-width="3" stroke-linejoin="round"></path></svg>
+<span class="disp" style="font-size:32px;letter-spacing:-.5px">start<span style="color:#C93A1F">.ng</span></span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:6px">
+<a class="navlink" href="/games">Games</a>
+<a class="navlink" href="/tournament">Tournament</a>
+<a class="navlink" href="/creators">Creators</a>
+<a class="navlink" href="/docs" style="background:#FFE9A8">Docs</a>
+<a class="btn" href="/games" style="background:#FFC20E;min-height:46px;font-size:17px;margin-left:8px">Play now</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section style="max-width:1200px;margin:0 auto;padding:24px 32px 40px;display:flex;flex-wrap:wrap;align-items:center;gap:40px">
+<div style="flex:1 1 480px;min-width:0">
+<div style="display:inline-block;padding:6px 16px;background:#1D1A16;color:#F6F5EE;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;transform:rotate(-2deg)">Docs for game makers</div>
+<h1 class="disp" style="margin:22px 0 0;font-size:clamp(46px,7vw,92px);line-height:.98;letter-spacing:-1.5px">Build a game for <span style="display:inline-block;padding:0 .16em .04em;background:#FFC20E;border:3px solid #1D1A16;border-radius:.28em;box-shadow:6px 6px 0 #1D1A16;transform:rotate(-2deg)">start.ng</span></h1>
+<p style="margin:30px 0 0;max-width:560px;font-size:22px;line-height:1.5;font-weight:500">Push your browser game to GitHub, make one API call, approve it once. It goes live at a <span class="code">yourgame.start.ng</span> address with its own leaderboard.</p>
+<div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:16px">
+<a class="btn" href="#publish" style="background:#FFC20E">Put your game live</a>
+<a class="btn" href="https://start.ng/docs.md" style="background:#fff">Docs for your AI (.md)</a>
+</div>
+</div>
+<div style="flex:1 1 360px;min-width:0">
+<svg viewBox="0 0 400 260" role="img" aria-label="A danfo bus with the address yourgame.start.ng on its side" style="display:block;width:100%;height:auto;max-width:480px;margin:0 auto">
+<circle cx="200" cy="130" r="120" fill="#FFE9A8"></circle>
+<rect x="0" y="212" width="400" height="48" fill="#2B2723"></rect><rect x="0" y="208" width="400" height="8" fill="#1D1A16"></rect>
+<line x1="0" y1="238" x2="400" y2="238" stroke="#FFC20E" stroke-width="5" stroke-dasharray="22 14" stroke-linecap="round" class="dash"></line>
+<g transform="translate(36 78)"><g class="bob">
+<rect x="0" y="26" width="328" height="100" rx="22" fill="#FFC20E" stroke="#1D1A16" stroke-width="4"></rect>
+<rect x="2" y="70" width="324" height="26" fill="#1D1A16"></rect>
+<text x="164" y="89" text-anchor="middle" font-family="Bagel Fat One, sans-serif" font-size="18" fill="#FFC20E" letter-spacing="1">yourgame.start.ng</text>
+<g fill="#CFEFFF" stroke="#1D1A16" stroke-width="3"><rect x="16" y="36" width="56" height="26" rx="7"></rect><rect x="82" y="36" width="56" height="26" rx="7"></rect><rect x="148" y="36" width="56" height="26" rx="7"></rect><rect x="214" y="36" width="56" height="26" rx="7"></rect><path d="M280 36 H304 Q318 36 318 48 V62 H280Z"></path></g>
+<circle cx="316" cy="108" r="7" fill="#FFF3B0" stroke="#1D1A16" stroke-width="3"></circle>
+<rect x="-4" y="114" width="336" height="12" rx="6" fill="#1D1A16"></rect>
+<g fill="#1D1A16"><circle cx="72" cy="128" r="26"></circle><circle cx="250" cy="128" r="26"></circle></g>
+<g class="wheel"><circle cx="72" cy="128" r="12" fill="#E8E4D8"></circle><rect x="69" y="116" width="6" height="24" rx="3" fill="#1D1A16"></rect><rect x="60" y="125" width="24" height="6" rx="3" fill="#1D1A16"></rect></g>
+<g class="wheel"><circle cx="250" cy="128" r="12" fill="#E8E4D8"></circle><rect x="247" y="116" width="6" height="24" rx="3" fill="#1D1A16"></rect><rect x="238" y="125" width="24" height="6" rx="3" fill="#1D1A16"></rect></g>
+
+</g></g>
+<g transform="translate(350 50)"><g class="float"><path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3Z" fill="#C93A1F" stroke="#1D1A16" stroke-width="3" stroke-linejoin="round"></path></g></g>
+</svg>
+</div>
+</section>
+
+<!-- BODY -->
+<section style="max-width:1200px;margin:0 auto;padding:24px 32px 96px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:48px">
+
+<aside aria-label="On this page" style="flex:0 1 250px;min-width:220px;background:#fff;border:3px solid #1D1A16;border-radius:26px;padding:20px 16px;box-shadow:5px 5px 0 #1D1A16;transform:rotate(-1deg)">
+<div class="disp" style="font-size:22px;padding:0 14px 8px">On this page</div>
+<a class="side" href="#how"><span class="disp" style="color:#C93A1F">1</span>How it works</a>
+<a class="side" href="#what"><span class="disp" style="color:#C93A1F">2</span>What a game is</a>
+<a class="side" href="#name"><span class="disp" style="color:#C93A1F">3</span>Name and address</a>
+<a class="side" href="#publish"><span class="disp" style="color:#C93A1F">4</span>Put your game live</a>
+<a class="side" href="#api"><span class="disp" style="color:#C93A1F">5</span>API reference</a>
+<a class="side" href="#players"><span class="disp" style="color:#C93A1F">6</span>Players and scores</a>
+<a class="side" href="#limits"><span class="disp" style="color:#C93A1F">7</span>Limits and rules</a>
+<a class="side" href="#checklist"><span class="disp" style="color:#C93A1F">8</span>Checklist</a>
+</aside>
+
+<div style="flex:1 1 640px;min-width:0;display:flex;flex-direction:column;gap:80px">
+
+<div id="how">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">How it works</h2>
+<p style="margin:14px 0 0;font-size:19px;line-height:1.55;color:#4A463E;max-width:620px">You bring the game. start.ng brings everything around it.</p>
+<div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:24px">
+<div class="tile" style="--r:-1.5deg;flex:1 1 240px;background:#FFE9A8;border:3px solid #1D1A16;border-radius:24px;padding:22px;box-shadow:5px 5px 0 #1D1A16"><div class="disp" style="font-size:26px">Sign-in</div><p style="margin:6px 0 0;font-size:16.5px;line-height:1.5">Players bring their start.ng character.</p></div>
+<div class="tile" style="--r:1.5deg;flex:1 1 240px;background:#FFC7D6;border:3px solid #1D1A16;border-radius:24px;padding:22px;box-shadow:5px 5px 0 #1D1A16"><div class="disp" style="font-size:26px">Shared leaderboard</div><p style="margin:6px 0 0;font-size:16.5px;line-height:1.5">Scores that live with your game.</p></div>
+<div class="tile" style="--r:-1deg;flex:1 1 240px;background:#CFEFFF;border:3px solid #1D1A16;border-radius:24px;padding:22px;box-shadow:5px 5px 0 #1D1A16"><div class="disp" style="font-size:26px">Multiplayer rooms</div><p style="margin:6px 0 0;font-size:16.5px;line-height:1.5">Live rooms over WebSocket.</p></div>
+<div class="tile" style="--r:2deg;flex:1 1 240px;background:#BDEBC9;border:3px solid #1D1A16;border-radius:24px;padding:22px;box-shadow:5px 5px 0 #1D1A16"><div class="disp" style="font-size:26px">Hosting</div><p style="margin:6px 0 0;font-size:16.5px;line-height:1.5">Free, at your own address.</p></div>
+</div>
+</div>
+
+<div id="what">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">What a start.ng game is</h2>
+<p style="margin:14px 0 0;font-size:19px;line-height:1.6;max-width:640px">A static, prebuilt website in a public GitHub repo. Frontend only: no server code, no secrets, no password fields. Use relative paths, and your game should run without a build step.</p>
+</div>
+
+<div id="name">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">The name and the address</h2>
+<p style="margin:14px 0 0;font-size:19px;line-height:1.6;max-width:640px">Your game's name becomes its address.</p>
+<div style="margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+<span class="code" style="font-size:20px;padding:8px 16px">&lt;name&gt;.start.ng</span>
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D1A16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18"></path></svg>
+<span class="code" style="font-size:20px;padding:8px 16px;background:#FFC20E">yourgame.start.ng</span>
+</div>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.6;max-width:640px;color:#4A463E">Lowercase letters, numbers and hyphens, up to 40 characters. Some names are reserved, and the first owner keeps a name.</p>
+</div>
+
+<div id="publish">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">Put your game live</h2>
+<div style="margin-top:32px;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;align-items:flex-start;gap:18px"><span class="disp" style="flex:none;width:52px;height:52px;border-radius:50%;background:#1D1A16;color:#F6F5EE;display:flex;align-items:center;justify-content:center;font-size:26px">1</span><p style="margin:0;padding-top:10px;font-size:19px;line-height:1.5">Build the game so it runs without a build step, and commit the built folder.</p></div>
+<div style="display:flex;align-items:flex-start;gap:18px"><span class="disp" style="flex:none;width:52px;height:52px;border-radius:50%;background:#1D1A16;color:#F6F5EE;display:flex;align-items:center;justify-content:center;font-size:26px">2</span><p style="margin:0;padding-top:10px;font-size:19px;line-height:1.5">Push it to a public GitHub repo.</p></div>
+<div style="display:flex;align-items:flex-start;gap:18px"><span class="disp" style="flex:none;width:52px;height:52px;border-radius:50%;background:#1D1A16;color:#F6F5EE;display:flex;align-items:center;justify-content:center;font-size:26px">3</span><p style="margin:0;padding-top:10px;font-size:19px;line-height:1.5">Call the check endpoint and fix anything it reports.</p></div>
+<div style="display:flex;align-items:flex-start;gap:18px"><span class="disp" style="flex:none;width:52px;height:52px;border-radius:50%;background:#1D1A16;color:#F6F5EE;display:flex;align-items:center;justify-content:center;font-size:26px">4</span><p style="margin:0;padding-top:10px;font-size:19px;line-height:1.5">Call the publish endpoint.</p></div>
+<div style="display:flex;align-items:flex-start;gap:18px"><span class="disp" style="flex:none;width:52px;height:52px;border-radius:50%;background:#FFC20E;border:3px solid #1D1A16;display:flex;align-items:center;justify-content:center;font-size:26px">5</span><p style="margin:0;padding-top:10px;font-size:19px;line-height:1.5">For a new game, open the link you get back once to approve it. After that, every push to the branch updates the game automatically.</p></div>
+</div>
+</div>
+
+<div id="api">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">API reference</h2>
+<div style="margin-top:30px;border:3px solid #1D1A16;border-radius:25px;box-shadow:6px 6px 0 #1D1A16;overflow:hidden;transform:rotate(-.4deg)">
+<div style="display:flex;align-items:center;gap:8px;padding:12px 18px;background:#F6F5EE;border-bottom:3px solid #1D1A16"><span style="width:14px;height:14px;border-radius:50%;background:#C93A1F;border:2px solid #1D1A16"></span><span style="width:14px;height:14px;border-radius:50%;background:#FFC20E;border:2px solid #1D1A16"></span><span style="width:14px;height:14px;border-radius:50%;background:#5DBB7C;border:2px solid #1D1A16"></span><span style="margin-left:10px;font-weight:700;font-size:14px;color:#5B574E">check, then publish</span></div>
+<pre class="term"><span style="color:#8ED1FC">POST</span> https://api.start.ng/games/check
+<span style="color:#8ED1FC">POST</span> https://api.start.ng/games/publish
+
+{
+  "repo_url": "https://github.com/you/your-game",
+  "name": "your-game",
+  "branch": "main"
+}</pre>
+</div>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 260px;background:#fff;border:3px solid #1D1A16;border-radius:22px;padding:20px 22px;box-shadow:4px 4px 0 #1D1A16"><div style="font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#5B574E">Body (JSON)</div><p style="margin:10px 0 0;font-size:17px;line-height:1.7"><span class="code">repo_url</span> required, a public GitHub repo<br><span class="code">name</span> optional<br><span class="code">branch</span> optional</p></div>
+<div style="flex:1 1 260px;background:#fff;border:3px solid #1D1A16;border-radius:22px;padding:20px 22px;box-shadow:4px 4px 0 #1D1A16"><div style="font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#5B574E">Responses</div><p style="margin:10px 0 0;font-size:17px;line-height:1.7"><span class="code">202</span> new game, with an <span class="code">approve_url</span><br><span class="code">200</span> update to a live game</p></div>
+</div>
+</div>
+
+<div id="players">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">Players and scores</h2>
+<p style="margin:14px 0 0;font-size:19px;line-height:1.6;max-width:640px">Your game talks to start.ng through a hidden iframe at <span class="code">start.ng/connect</span> using <span class="code">postMessage</span>. Games with a character should draw from the player's style; games without one should show a profile card. Guests get the default look and a sign-in option.</p>
+<div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:12px">
+<span class="code" style="padding:6px 14px">startng:whoami</span><span class="code" style="padding:6px 14px">startng:score</span><span class="code" style="padding:6px 14px">startng:leaderboard</span><span class="code" style="padding:6px 14px">startng:ticket</span>
+</div>
+<p style="margin:26px 0 0;font-size:19px;line-height:1.6;max-width:640px">A plain <span class="code">score</span> works out of the box. For custom columns, define 1 to 5 stats in a <span class="code">startng.json</span> file.</p>
+</div>
+
+<div id="limits">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">Limits and rules</h2>
+<div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:22px">
+<div class="tile" style="--r:-2deg;flex:1 1 170px;background:#FFE9A8;border:3px solid #1D1A16;border-radius:22px;padding:20px;box-shadow:5px 5px 0 #1D1A16;text-align:center"><div class="disp" style="font-size:36px;line-height:1">2,000</div><div style="margin-top:6px;font-weight:700;font-size:15px">files, at most</div></div>
+<div class="tile" style="--r:1.5deg;flex:1 1 170px;background:#FFC7D6;border:3px solid #1D1A16;border-radius:22px;padding:20px;box-shadow:5px 5px 0 #1D1A16;text-align:center"><div class="disp" style="font-size:36px;line-height:1">100 MB</div><div style="margin-top:6px;font-weight:700;font-size:15px">in total</div></div>
+<div class="tile" style="--r:-1deg;flex:1 1 170px;background:#CFEFFF;border:3px solid #1D1A16;border-radius:22px;padding:20px;box-shadow:5px 5px 0 #1D1A16;text-align:center"><div class="disp" style="font-size:36px;line-height:1">25 MB</div><div style="margin-top:6px;font-weight:700;font-size:15px">per file</div></div>
+<div class="tile" style="--r:2deg;flex:1 1 170px;background:#BDEBC9;border:3px solid #1D1A16;border-radius:22px;padding:20px;box-shadow:5px 5px 0 #1D1A16;text-align:center"><div class="disp" style="font-size:36px;line-height:1">2 hours</div><div style="margin-top:6px;font-weight:700;font-size:15px">per game session</div></div>
+</div>
+<ul style="margin:30px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:18px;line-height:1.55;max-width:680px">
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="flex:none;color:#C93A1F;font-weight:700">★</span><span><strong>Cover image:</strong> <span class="code">cover.png</span>, <span class="code">.jpg</span> or <span class="code">.webp</span> at 16:10, at least 640×400, under 2 MB.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="flex:none;color:#C93A1F;font-weight:700">★</span><span><strong>Scores:</strong> whole numbers from 0 to 1,000,000,000. The best run is kept per player.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="flex:none;color:#C93A1F;font-weight:700">★</span><span><strong>Warnings:</strong> external scripts, insecure links and redirects trigger warnings. Malware, crypto miners or hidden programs block publishing.</span></li>
+<li style="display:flex;gap:12px"><span aria-hidden="true" style="flex:none;color:#C93A1F;font-weight:700">★</span><span><strong>Rate limit:</strong> unsigned new-game publishing is limited to 20 per hour per address.</span></li>
+</ul>
+</div>
+
+<div id="checklist">
+<div style="background:#FFC20E;border:3px solid #1D1A16;border-radius:30px;padding:36px 36px 40px;box-shadow:6px 6px 0 #1D1A16;transform:rotate(-.5deg)">
+<h2 class="disp" style="margin:0;font-size:clamp(34px,4.4vw,52px);line-height:1;letter-spacing:-1px">Checklist before you publish</h2>
+<ul style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:19px;line-height:1.4">
+<li style="display:flex;align-items:center;gap:14px"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style="flex:none"><rect x="2" y="2" width="26" height="26" rx="8" fill="#fff" stroke="#1D1A16" stroke-width="3"></rect><path d="M8 15 L13 20 L22 10" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Runs with no build step, built folder committed</li>
+<li style="display:flex;align-items:center;gap:14px"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style="flex:none"><rect x="2" y="2" width="26" height="26" rx="8" fill="#fff" stroke="#1D1A16" stroke-width="3"></rect><path d="M8 15 L13 20 L22 10" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Public GitHub repo</li>
+<li style="display:flex;align-items:center;gap:14px"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style="flex:none"><rect x="2" y="2" width="26" height="26" rx="8" fill="#fff" stroke="#1D1A16" stroke-width="3"></rect><path d="M8 15 L13 20 L22 10" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>Relative paths, frontend only, no secrets, no password fields</li>
+<li style="display:flex;align-items:center;gap:14px"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style="flex:none"><rect x="2" y="2" width="26" height="26" rx="8" fill="#fff" stroke="#1D1A16" stroke-width="3"></rect><path d="M8 15 L13 20 L22 10" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>A valid name and a 16:10 cover image</li>
+<li style="display:flex;align-items:center;gap:14px"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" style="flex:none"><rect x="2" y="2" width="26" height="26" rx="8" fill="#fff" stroke="#1D1A16" stroke-width="3"></rect><path d="M8 15 L13 20 L22 10" fill="none" stroke="#0B6B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>The check endpoint reports no errors</li>
+</ul>
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:16px">
+<a class="btn" href="/docs" style="background:#fff">Read the full docs</a>
+<a class="btn" href="https://start.ng/docs.md" style="background:#fff">Docs for your AI (.md)</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer style="background:#1D1A16;color:#F6F5EE;padding:64px 0 36px">
+<div style="max-width:1200px;margin:0 auto;padding:0 32px">
+<div style="display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+<div style="flex:1 1 320px;max-width:420px">
+<a href="/" style="display:flex;align-items:center;gap:10px">
+<svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" fill="#FFC20E" stroke="#F6F5EE" stroke-width="3"></circle><rect x="3" y="20" width="38" height="7" fill="#1D1A16"></rect><path d="M17 11 L30 22 L17 33Z" fill="#C93A1F" stroke="#1D1A16" stroke-width="3" stroke-linejoin="round"></path></svg>
+<span class="disp" style="font-size:32px">start<span style="color:#FFC20E">.ng</span></span>
+</a>
+<p style="margin:18px 0 0;font-size:17px;line-height:1.6;color:#D9D6CB">Nigeria's home for browser games, made by the community and by creators across Africa.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:48px 64px">
+<div><div class="disp" style="font-size:20px;color:#FFC20E;margin-bottom:8px">Play</div>
+<a class="flink" href="/games">All games</a><a class="flink" href="/tournament">Daily tournament</a><a class="flink" href="/leaderboard">Leaderboard</a><a class="flink" href="/categories">Categories</a><a class="flink" href="/hangout">The Hangout</a></div>
+<div><div class="disp" style="font-size:20px;color:#FFC20E;margin-bottom:8px">Make games</div>
+<a class="flink" href="/creators">Independent creators</a><a class="flink" href="/docs">Build a game</a><a class="flink" href="https://start.ng/docs.md">Docs for your AI (.md)</a></div>
+<div><div class="disp" style="font-size:20px;color:#FFC20E;margin-bottom:8px">About</div>
+<a class="flink" href="/docs">About start.ng</a></div>
+</div>
+</div>
+<div style="margin-top:48px;padding-top:24px;border-top:2px dashed #5B574E;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:15px;color:#D9D6CB"><span>© 2026 start.ng</span><span>Games from Nigeria and across Africa.</span></div>
+</div>
+</footer>
+
+</div>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F6F5EE;
+  color: #1D1A16;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* === Page 0 (0_home_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.card{display:block;transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.card:hover{transform:rotate(0deg) translateY(-10px) scale(1.02)}
+.card:hover .pill{transform:rotate(360deg)}
+.pill{transition:transform .5s}
+.step{transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.step:hover{transform:rotate(0deg) scale(1.03)}
+.code{display:inline-block;padding:1px 8px;border-radius:8px;background:#ffffffaa;border:2px solid #1D1A16;font-family:ui-monospace,Menlo,monospace;font-size:.88em}
+.bub{display:block}
+.bub:hover{transform:translateY(-4px) rotate(-1deg)}
+.bub{transition:transform .25s cubic-bezier(.3,1.7,.5,1)}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.bob{animation:bob 1.5s ease-in-out infinite}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.float2{transform-box:fill-box;transform-origin:center;animation:float 5.5s ease-in-out infinite reverse}
+.drift{animation:drift 9s ease-in-out infinite alternate}
+.dash{animation:dash 1s linear infinite}
+.steam{animation:steam 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center bottom}
+.marq{animation:marq 38s linear infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(10deg)}}
+@keyframes drift{from{transform:translateX(-18px)}to{transform:translateX(22px)}}
+@keyframes dash{to{stroke-dashoffset:-42}}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.7);opacity:0}40%{opacity:.9}100%{transform:translateY(-16px) scaleY(1.1);opacity:0}}
+@keyframes marq{to{transform:translateX(-50%)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 1 (1_games_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.card{display:block;transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.card:hover{transform:rotate(0deg) translateY(-10px) scale(1.03)}
+.pg{display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:48px;padding:0 16px;border:3px solid #1D1A16;border-radius:999px;background:#fff;font-weight:700;font-size:17px;transition:transform .2s cubic-bezier(.3,1.8,.5,1)}
+.pg:hover{transform:rotate(-5deg) scale(1.1)}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.bob{animation:bob 1.5s ease-in-out infinite}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 2 (2_tournament_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.card{display:block;transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.card:hover{transform:rotate(0deg) translateY(-10px) scale(1.03)}
+.tile{transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.tile:hover{transform:rotate(0deg) scale(1.05)}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.bob{animation:bob 1.5s ease-in-out infinite}
+.tick{transform-box:view-box;transform-origin:150px 160px;animation:spin 8s linear infinite}
+.ring{transform-box:fill-box;transform-origin:center bottom;animation:ring .5s ease-in-out infinite alternate}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ring{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 3 (3_leaderboard_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.tile{transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.tile:hover{transform:rotate(0deg) translateY(-8px) scale(1.03)}
+.lbrow{transition:transform .22s cubic-bezier(.3,1.7,.5,1)}
+.lbrow:hover{transform:translateX(8px) rotate(-.6deg)}
+.tab{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;border-radius:999px;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:18px}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.bob{animation:bob 1.6s ease-in-out infinite}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 4 (4_categories_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.cat{display:inline-flex;align-items:center;gap:12px;padding:12px 14px 12px 22px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-weight:700;font-size:18px;transform:rotate(var(--r,0deg));transition:transform .25s cubic-bezier(.3,1.8,.5,1),box-shadow .25s}
+.cat:hover{transform:rotate(0deg) translateY(-6px) scale(1.06);box-shadow:6px 10px 0 #1D1A16}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 5 (5_hangout_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.ctl{transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.ctl:hover{transform:rotate(0deg) translateY(-8px) scale(1.03)}
+.key{display:inline-flex;align-items:center;justify-content:center;min-width:56px;height:56px;padding:0 14px;background:#fff;border:3px solid #1D1A16;border-radius:14px;box-shadow:0 6px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:22px;transition:transform .12s,box-shadow .12s}
+.ctl:hover .key{transform:translateY(3px);box-shadow:0 3px 0 #1D1A16}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.bob{animation:bob 1.6s ease-in-out infinite}
+.bob2{animation:bob 1.9s ease-in-out infinite;animation-delay:-.6s}
+.bob3{animation:bob 1.4s ease-in-out infinite;animation-delay:-1s}
+.drift{animation:drift 12s ease-in-out infinite alternate}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 30s linear infinite}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wave{transform-box:view-box;transform-origin:var(--ox) var(--oy);animation:wave .6s ease-in-out infinite alternate}
+.kite{transform-box:fill-box;transform-origin:center;animation:kite 3.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes drift{from{transform:translateX(-24px)}to{transform:translateX(30px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wave{from{transform:rotate(-22deg)}to{transform:rotate(18deg)}}
+@keyframes kite{0%,100%{transform:rotate(-8deg) translateY(0)}50%{transform:rotate(8deg) translateY(-14px)}}
+.still *{animation:none !important}
+
+/* === Page 6 (6_creators_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.ticket{display:flex;transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.ticket:hover{transform:rotate(0deg) translateY(-8px) scale(1.03)}
+.ticket:hover .stub{transform:rotate(-8deg)}
+.stub{transition:transform .4s cubic-bezier(.3,1.7,.5,1)}
+.pg{display:inline-flex;align-items:center;justify-content:center;min-width:48px;height:48px;padding:0 16px;border:3px solid #1D1A16;border-radius:999px;background:#fff;font-weight:700;font-size:17px;transition:transform .2s cubic-bezier(.3,1.8,.5,1)}
+.pg:hover{transform:rotate(-5deg) scale(1.1)}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.wob{transform-box:fill-box;transform-origin:center;animation:wob 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes wob{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+.still *{animation:none !important}
+
+/* === Page 7 (7_docs_template.html) === */
+body{margin:0}
+*{box-sizing:border-box}
+.root a{color:inherit;text-decoration:none}
+.disp{font-family:'Bagel Fat One','DM Sans',sans-serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border:3px solid #1D1A16;border-radius:999px;box-shadow:4px 4px 0 #1D1A16;font-family:'Bagel Fat One','DM Sans',sans-serif;font-size:19px;color:#1D1A16;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #1D1A16}
+.navlink{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.navlink:hover{background:#FFE9A8;transform:rotate(-4deg) scale(1.08)}
+.side{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:14px;font-weight:700;font-size:16px;transition:transform .2s cubic-bezier(.3,1.8,.5,1),background .2s}
+.side:hover{background:#FFE9A8;transform:translateX(6px) rotate(-1deg)}
+.tile{transform:rotate(var(--r,0deg));transition:transform .28s cubic-bezier(.3,1.7,.5,1)}
+.tile:hover{transform:rotate(0deg) translateY(-6px) scale(1.03)}
+.code{display:inline-block;padding:1px 8px;border-radius:8px;background:#fff;border:2px solid #1D1A16;font-family:ui-monospace,Menlo,monospace;font-size:.88em}
+.term{margin:0;padding:22px 24px;background:#1D1A16;color:#F6F5EE;border-radius:0 0 22px 22px;font-family:ui-monospace,Menlo,monospace;font-size:15.5px;line-height:1.65;white-space:pre-wrap;overflow-x:auto}
+.flink{display:block;padding:6px 0;font-size:16px;color:#F6F5EE}
+.flink:hover{color:#FFC20E;text-decoration:underline}
+.float{transform-box:fill-box;transform-origin:center;animation:float 4s ease-in-out infinite}
+.bob{animation:bob 1.5s ease-in-out infinite}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin .8s linear infinite}
+.dash{animation:dash 1s linear infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes dash{to{stroke-dashoffset:-42}}
+.still *{animation:none !important}
+
+/* === Responsive Enhancements === */
+@media (max-width: 768px) {
+  header, section, footer {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .navlink {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    min-height: 44px;
+    padding: 0 18px;
+    font-size: 16px;
+  }
+
+  /* Ensure card headings and flex items scale down smoothly */
+  .card, .step {
+    max-width: 100% !important;
+  }
+
+  /* Wrap long URLs or code snippets on narrow mobile screens */
+  code, pre, .code {
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    justify-content: center !important;
+    text-align: center;
+    gap: 12px !important;
+  }
+
+  header nav {
+    justify-content: center !important;
+    gap: 4px !important;
+  }
+
+  .btn {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+}
